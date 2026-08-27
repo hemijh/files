@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GAFK — Support</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Support and help for GAFK, a Mac app that reminds you to get up and move.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --rule: #e5e5e8;
+    --accent: #f94548;
+    --card: #f7f7f8;
+    --accent-soft: rgba(249, 69, 72, .35);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131315;
+      --fg: #e8e8ea;
+      --muted: #9a9aa0;
+      --rule: #2c2c30;
+      --accent: #ff5c5f;
+      --card: #1c1c1f;
+      --accent-soft: rgba(255, 92, 95, .4);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 38rem; margin: 0 auto; padding: 4rem 1.5rem 5rem; }
+
+  header { display: flex; align-items: center; gap: .75rem; margin-bottom: 2.75rem; }
+  .mark { width: 34px; height: 34px; flex: none; display: block; }
+  header b { font-size: 15px; font-weight: 600; }
+  header em { font-style: normal; color: var(--muted); font-size: 15px; }
+
+  h1 { font-size: 1.9rem; line-height: 1.2; font-weight: 600; margin: 0 0 .5rem; letter-spacing: -.015em; }
+  .date { color: var(--muted); font-size: .9rem; margin: 0 0 2.5rem; }
+
+  .lede {
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.25rem;
+    margin: 0 0 2.5rem;
+  }
+  .lede p { margin: 0; }
+
+  h2 {
+    font-size: 1.05rem; font-weight: 600; letter-spacing: -.005em;
+    margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  }
+  h3 { font-size: .98rem; font-weight: 600; margin: 1.5rem 0 .35rem; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .3rem; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+  a:hover { border-bottom-color: var(--accent); }
+  .none { font-weight: 600; }
+
+  .contact {
+    margin-top: .25rem; font-size: 1.05rem; font-weight: 600;
+  }
+
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="mark" width="34" height="34" viewBox="0 0 72 72" fill="none"
+         xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GAFK app icon">
+      <rect width="72" height="72" rx="18.3" fill="#F94548"/>
+      <path d="M52.9785 42.0775V36.9261L54.9969 14.8307C55.016 14.6142 54.9468 14.4071 54.7989 14.2471C54.651 14.0871 54.4482 14 54.2287 14H37.3963C37.0098 14 36.6853 14.28 36.6305 14.6566L33.4358 36.9286H19.1616C17.9686 36.9286 17 37.8841 17 39.0607V40.0185C17 40.8681 17.5106 41.5976 18.243 41.9412C18.2359 41.9388 18.2287 41.9388 18.2215 41.9365L17.1026 57.2869C17.074 57.6705 17.3841 57.9976 17.773 57.9976H18.892C19.2164 57.9976 19.4956 57.767 19.5528 57.4516L22.3013 42.1524H34.049L32.6247 57.2749C32.5889 57.6632 32.899 57.9998 33.2927 57.9998H34.2518C34.5739 57.9998 34.8507 57.7762 34.9103 57.4632L37.9236 42.1549H48.8269L52.1026 57.4752C52.167 57.7812 52.4414 58 52.7587 58H53.8706C54.269 58 54.5792 57.6611 54.5386 57.2705L52.9783 42.0822H52.9759L52.9785 42.0775Z" fill="#FFFFFF"/>
+    </svg>
+    <div><b>GAFK</b> &nbsp;<em>for macOS</em></div>
+  </header>
+
+  <h1>Support</h1>
+  <p class="date">GAFK for macOS</p>
+
+  <div class="lede">
+    <p>GAFK sits in your menu bar and reminds you to get up and move at an interval you choose. If something isn't working the way you expect, start here — and if the answer isn't below, just email me.</p>
+  </div>
+
+  <h2>Get in touch</h2>
+  <p>Questions, bug reports, and feature requests all go to the same place:</p>
+  <p class="contact"><a href="mailto:hemi@seven-seven.me">hemi@seven-seven.me</a></p>
+  <p>GAFK is made by one person, so replies usually take a day or two. Bug reports are genuinely welcome — if you can say which version of macOS you're on and what you were doing when it happened, that's usually enough for me to track it down.</p>
+
+  <h2>Requirements</h2>
+  <p>GAFK runs on macOS 13.5 (Ventura) or later, on both Apple silicon and Intel Macs.</p>
+
+  <h2>How GAFK works</h2>
+  <p>Turn reminders on, pick an interval, and GAFK counts down quietly in the background. When the timer runs out, a notification slides in at the top-right of your screen and fades away on its own — or you can swipe it away. There's nothing to dismiss and nothing to keep track of.</p>
+  <p>You'll find GAFK in two places: its icon in the menu bar, for a quick on/off switch and a <em>Get Up Now</em> button, and its main window, which opens when you click the Dock icon. Everything is configured in that window.</p>
+
+  <h2>Common questions</h2>
+
+  <h3>My reminders aren't appearing</h3>
+  <p>Check that the switch at the top of the GAFK window is on — the caption underneath tells you either when the next reminder is due or that reminders are paused. To confirm the reminder itself works without waiting for the timer, use the <em>Preview</em> button, which fires one immediately.</p>
+
+  <h3>I'm not hearing a sound</h3>
+  <p>GAFK plays your Mac's standard alert sound rather than bundling its own, so it always matches the rest of your system. If it's silent, check <strong>System Settings → Sound</strong> — both the selected alert sound and the alert volume, which is separate from your main output volume and can be turned all the way down independently. The sound can also be switched off inside GAFK.</p>
+
+  <h3>What happens when my Mac sleeps?</h3>
+  <p>The timer pauses when your Mac sleeps and picks up again when it wakes, so you won't come back to a reminder that fired while the lid was shut. If you had switched reminders off before sleeping, they stay off.</p>
+
+  <h3>Does turning reminders off reset the timer?</h3>
+  <p>No. Switching off pauses the countdown where it is, and switching back on resumes from that point rather than starting over.</p>
+
+  <h3>Can GAFK start automatically when I log in?</h3>
+  <p>There's no built-in setting for this yet, but macOS can do it: open <strong>System Settings → General → Login Items &amp; Extensions</strong>, click <strong>+</strong> under "Open at Login," and choose GAFK from your Applications folder.</p>
+
+  <h3>Does GAFK need an internet connection?</h3>
+  <p>No. GAFK makes no network connections at all and collects no data — see the <a href="/gafk/privacy/">privacy policy</a> for the details.</p>
+
+  <h3>How do I uninstall it?</h3>
+  <p>Drag GAFK from your Applications folder to the Trash. Your saved preferences go with it.</p>
+
+  <h2>Refunds</h2>
+  <p>Purchases are handled by Apple, so refunds go through them rather than through me. You can request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> using the Apple Account you bought the app with.</p>
+
+  <footer>
+    GAFK is developed and published by Brian Himmler. &nbsp;·&nbsp; <a href="/gafk/privacy/">Privacy Policy</a>
+  </footer>
+
+</div>
+</body>
+</html>
