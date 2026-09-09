@@ -1,0 +1,5 @@
+# Keep the resume out of search results.
+# Everything else on this host stays crawlable — the GAFK privacy and
+# support pages must remain reachable for Apple App Review.
+User-agent: *
+Disallow: /hemi-himmler-resume.pdf
